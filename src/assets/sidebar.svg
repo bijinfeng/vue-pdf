@@ -1,0 +1,9 @@
+<svg class="icon-lwIDk" width="1em" height="1em" fill="none" viewBox="0 0 20 20">
+  <g>
+    <path data-follow-stroke="#212B36"
+      d="M16.375 2.5H3.625c-.621 0-1.125.504-1.125 1.125v12.75c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V3.625c0-.621-.504-1.125-1.125-1.125Z"
+      stroke="#212B36" stroke-width="1.2"></path>
+    <path data-follow-stroke="#212B36" d="M7.5 2.5v15" stroke="#212B36" stroke-width="1.2" stroke-linecap="round">
+    </path>
+  </g>
+</svg>

@@ -7,7 +7,7 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "preinstall": "npx -y only-allow pnpm",
     "prepare": "husky install",
@@ -32,6 +32,7 @@
     "@typescript-eslint/parser": "^6.5.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "@vue/runtime-core": "^3.3.4",
     "autoprefixer": "^10.4.15",
     "commitizen": "^4.3.0",
     "cz-git": "^1.7.1",
@@ -55,7 +56,8 @@
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
-    "vite-plugin-dts": "^3.5.3",
+    "vite-plugin-dts": "^3.3.1",
+    "vite-svg-loader": "^4.0.0",
     "vue-tsc": "^1.8.5",
     "yaml-eslint-parser": "^1.2.2"
   },

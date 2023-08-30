@@ -1,15 +1,25 @@
+import path from "node:path";
+
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import svgLoader from "vite-svg-loader";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   root: "./example",
+  resolve: {
+    alias: {
+      "@": path.resolve("src"),
+    },
+  },
   build: {
+    outDir: "dist",
+    sourcemap: true,
     rollupOptions: {
       external: ["vue", "naive-ui", /\.css/],
-      input: ["src/index.ts"],
+      input: path.resolve(__dirname, "src/index.ts"),
       output: [
         {
           format: "es",
@@ -30,16 +40,16 @@ export default defineConfig({
       ],
     },
     lib: {
-      entry: "src/index.ts",
+      entry: path.resolve(__dirname, "src/index.ts"),
       name: "vue-pdf",
     },
   },
   plugins: [
     vue(),
     vueJsx(),
-    dts({
-      entryRoot: "src",
-      outDir: "./dist/types",
+    svgLoader({
+      svgo: false,
     }),
+    dts(),
   ],
 });
