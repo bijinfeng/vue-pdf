@@ -13,7 +13,10 @@
     "prepare": "husky install",
     "cz": "cz",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
-    "lint:fix": "pnpm run lint --fix"
+    "lint:fix": "pnpm run lint --fix",
+    "changeset": "changeset",
+    "ci:publish": "changeset publish",
+    "ci:version": "changeset version"
   },
   "peerDependencies": {
     "vue": "^3.0.0"
