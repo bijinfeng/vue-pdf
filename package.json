@@ -20,7 +20,10 @@
     "changeset": "changeset",
     "ci:publish": "changeset publish",
     "ci:version": "changeset version",
-    "build:dts": "tsc --project tsconfig.json"
+    "build:dts": "tsc --project tsconfig.json",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "peerDependencies": {
     "vue": "^3.0.0"
@@ -61,6 +64,7 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-svg-loader": "^4.0.0",
+    "vitepress": "1.0.0-rc.10",
     "vue-tsc": "^1.8.5",
     "yaml-eslint-parser": "^1.2.2"
   },
