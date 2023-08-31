@@ -6,6 +6,12 @@ This page demonstrates some of the built-in markdown extensions provided by Vite
 
 VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
 
+<script setup>
+import { PdfPreview } from '@pingtou/vue-pdf'
+</script>
+
+<PdfPreview />
+
 **Input**
 
 ````
