@@ -17,7 +17,7 @@ export default defineConfig({
     outDir: "dist",
     sourcemap: true,
     rollupOptions: {
-      external: ["vue", "naive-ui", /\.css/],
+      external: ["vue", /\.css/],
       input: path.resolve(__dirname, "src/index.ts"),
       output: [
         {

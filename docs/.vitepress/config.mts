@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import path from "node:path";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import svgLoader from "vite-svg-loader";
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -17,7 +18,10 @@ export default defineConfig({
       }
     },
     plugins: [
-      vueJsx()
+      vueJsx(),
+      svgLoader({
+        svgo: false,
+      }),
     ]
   },
   themeConfig: {

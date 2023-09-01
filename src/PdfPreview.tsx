@@ -1,9 +1,21 @@
 import { defineComponent } from "vue";
 
+import { OperateBar } from "@/components/OperateBar";
+
+import { useContextProvide } from "./store";
+
 export const PdfPreview = defineComponent({
   name: "PdfPreview",
   props: { file: { type: String, required: true } },
   setup() {
-    return () => <div>ss</div>;
+    const store = useContextProvide();
+
+    console.log(store);
+
+    return () => (
+      <div>
+        <OperateBar />
+      </div>
+    );
   },
 });
