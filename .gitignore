@@ -24,3 +24,5 @@ dist-ssr
 # viteoress
 docs/.vitepress/dist
 docs/.vitepress/cache
+.vitepress
+style.css
