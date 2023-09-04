@@ -13,7 +13,7 @@ export const PdfPreview = defineComponent({
     console.log(store);
 
     return () => (
-      <div class="flex items-center">
+      <div class="pdf-container">
         <OperateBar />
       </div>
     );

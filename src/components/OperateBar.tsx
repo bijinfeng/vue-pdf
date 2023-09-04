@@ -22,7 +22,7 @@ export const OperateBar = defineComponent({
   },
   setup(props, { emit }) {
     return () => (
-      <div class="flex items-center border-b px-[12px] py-[6px] gap-3">
+      <div class="pdf-operate">
         <IconButton
           actived={props.showThumbnail}
           onClick={() => emit("checkThumbnail")}
